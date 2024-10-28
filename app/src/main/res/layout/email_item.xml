@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="horizontal">
+
+    <!-- Avatar Circle -->
+    <TextView
+        android:id="@+id/avatarTextView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="E"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <!-- Container for email details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp">
+
+        <!-- Sender Name and Time Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Sender Name -->
+            <TextView
+                android:id="@+id/senderTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sender Name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:34 PM"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Email Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Email Title"
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Email Content Preview -->
+        <TextView
+            android:id="@+id/previewTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Email preview content goes here..."
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+</LinearLayout>
