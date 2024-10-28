@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:orientation="horizontal">
+    android:background="#ebe5ec"
+    android:orientation="horizontal"
+    android:padding="16dp">
 
     <!-- Avatar Circle -->
     <TextView
@@ -20,16 +21,16 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_marginLeft="8dp">
+        android:orientation="vertical">
 
         <!-- Sender Name and Time Row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <!-- Sender Name -->
             <TextView
@@ -57,8 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="Email Title"
-            android:textSize="14sp"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
         <!-- Email Content Preview -->
         <TextView
@@ -67,8 +68,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:text="Email preview content goes here..."
-            android:textSize="12sp"
-            android:textColor="@android:color/darker_gray" />
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
     </LinearLayout>
 
 </LinearLayout>
